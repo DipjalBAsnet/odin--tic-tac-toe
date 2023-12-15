@@ -12,9 +12,9 @@ const gameBoard = (() => {
     }
   };
 
-  const resetboard = () => {
+  const resetBoard = () => {
     board = ["", "", "", "", "", "", "", "", ""];
   };
 
-  return { getBoard, makeMove, resetboard };
+  return { getBoard, makeMove, resetBoard };
 })();

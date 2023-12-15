@@ -7,10 +7,56 @@ body {
   margin: 0;
 }
 
+.board-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .board {
-  /* Add styling for your game board */
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
 }
 
 .cell {
-  /* Add styling for individual cells (squares) */
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  font-size: 36px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
+
+.board-container .board {
+  margin: auto;
+}
+.reset-button {
+  display: block;
+  margin-top: 20px;
+  margin-right: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.reset-button:hover {
+  background-color: #45a049;
+}
+.winning-cell {
+  background-color: yellow;
 }
